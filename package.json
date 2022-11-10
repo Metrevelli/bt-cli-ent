@@ -9,6 +9,7 @@
   "author": "Nika Metreveli",
   "license": "ISC",
   "dependencies": {
-    "bencode": "^2.0.3"
+    "bencode": "^2.0.3",
+    "bn.js": "^5.2.1"
   }
 }

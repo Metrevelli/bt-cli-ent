@@ -119,7 +119,7 @@ function parseAnnounceResp(resp) {
     peers: group(resp.slice(20), 6).map((address) => {
       return {
         ip: address.slice(0, 4).join('.'),
-        port: address.slice(4)
+        port: address.readUInt16Be(4)
       };
     })
   };
