@@ -31,7 +31,7 @@ function udpSend(socket, message, rawUrl, callback = () => {}) {
 }
 
 function respType(resp) {
-  // ...
+  return resp.readUInt32Be(0) ? 'announce' : 'connect';
 }
 
 function buildConnReq() {
