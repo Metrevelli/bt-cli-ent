@@ -2,6 +2,7 @@
 
 const fs = require('fs');
 const bencode = require('bencode');
+const crypto = require('crypto');
 const BN = require('bn.js');
 
 module.exports.open = (filepath) => {
