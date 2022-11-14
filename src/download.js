@@ -34,6 +34,16 @@ function msgHandler(msg, socket) {
   }
 }
 
+function chokeHandler() {}
+
+function unchokeHandler() {}
+
+function haveHandler(payload) {}
+
+function bitfieldHandler(payload) {}
+
+function pieceHandler(payload) {}
+
 function isHandShake(msg) {
   return (
     msg.length === msg.readUInt8(0) + 49 &&
