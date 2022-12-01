@@ -5,4 +5,4 @@ const download = require('./src/download');
 
 const torrent = torrentParsers.open(process.argv[2]);
 
-download(torrent);
+download(torrent, torrent.info.name);
